@@ -5,7 +5,7 @@ require('dotenv').config()
 const bodyParser = require('body-parser')
 const cors = require('cors');
 app.use(cors({
-	origin: 'https://miniproject-beige.vercel.app',
+	origin: ['https://miniproject-beige.vercel.app', 'http://localhost:5500']
 }))
 
 app.use(bodyParser.urlencoded({ extended: false }))
